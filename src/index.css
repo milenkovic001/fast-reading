@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Poppins&family=Fira+Code&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-fira: "Fira Code", monospace;
+  --font-georgia: Georgia, serif;
+  --font-arial: Arial, sans-serif; 
+
+
+  /* Default theme values (clean-light) */
+  --color-text: #1a1a1a;
+  --color-background: #ffffff;
+  --color-button: #97c9ff;
+  --color-button-hover: #54a6ff;
+  --color-nav-text: #333333;
+  --color-nav-text-hover: #0056b3;
+  --color-nav-text-active: #003366;
+  --color-nav-bg-active: #e6f2ff;
+  --color-nav-box-hover: #cce0ff;
+  --color-nav-box-check: #007bff;
+  --color-border: #e1e5e9;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-highlight-text: #b5e3fd;
+}
+
+
+:root { --bs-body-font-family: inherit !important; }
+
+[data-font="inter"] { font-family: Inter, sans-serif; }
+[data-font="roboto"] { font-family: Roboto, sans-serif; }
+[data-font="lato"] { font-family: Lato, sans-serif; }
+[data-font="montserrat"] { font-family: Montserrat, sans-serif; }
+[data-font="poppins"] { font-family: Poppins, sans-serif; }
+[data-font="georgia"] { font-family: Georgia, serif; }
+[data-font="arial"] { font-family: Arial, sans-serif; }
+[data-font="fira"] { font-family: "Fira Code", monospace; }
+
+[data-font="sans"] { font-family:  var(--font-sans); }
+[data-font="serif"] { font-family: var(--font-serif); }
+[data-font="mono"] { font-family: var(--font-mono); }
+
+
+
+/* Light Theme 1: Clean Light */
+[data-theme='clean-light'] {
+  --color-text: #1a1a1a;
+  --color-background: #ffffff;
+  --color-button: #97c9ff;
+  --color-button-hover: #54a6ff;
+  --color-nav-text: #333333;
+  --color-nav-text-hover: #0056b3;
+  --color-nav-text-active: #003366;
+  --color-nav-bg-active: #e6f2ff;
+  --color-nav-box-hover: #cce0ff;
+  --color-nav-box-check: #007bff;
+  --color-border: #e1e5e9;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-highlight-text: #b5e3fd;
+}
+
+[data-theme='warm-light'] {
+  --color-text: #2d1b00;
+  --color-background: #fffaf0;
+  --color-button: #e67e22;
+  --color-button-hover: #d35400;
+  --color-nav-text: #4a2c00;
+  --color-nav-text-hover: #e67e22;
+  --color-nav-text-active: #a63a00;
+  --color-nav-bg-active: #fff2e0;
+  --color-nav-box-hover: #ffd7b3;
+  --color-nav-box-check: #e67e22;
+  --color-border: #deb887;
+  --color-shadow: rgba(0, 0, 0, 0.08);
+  --color-highlight-text: #ffb4b4;
+}
+
+[data-theme='deep-dark'] {
+  --color-text: #e0e0e0;
+  --color-background: #141b1c;
+  --color-button: #028db4;
+  --color-button-hover: #014f67;
+  --color-nav-text: #b0bec5;
+  --color-nav-text-hover: #00b7eb;
+  --color-nav-text-active: #207d97;
+  --color-nav-bg-active: #00232d;
+  --color-nav-box-hover: #327e93;
+  --color-nav-box-check: #00b7eb;
+  --color-border: #455a64;
+  --color-shadow: rgba(255, 255, 255, 0.504);
+  --color-highlight-text: #036d8a;
+}
+
+[data-theme='slate-dark'] {
+  --color-text: #d1d5db;
+  --color-background: #1f2735;
+  --color-button: #3a4b91;
+  --color-button-hover: #2b6cb0;
+  --color-nav-text: #a0aec0;
+  --color-nav-text-hover: #4b5eaa;
+  --color-nav-text-active: #5d6db4;
+  --color-nav-bg-active: #202b3d;
+  --color-nav-box-hover: #3b4d7a;
+  --color-nav-box-check: #4b5eaa;
+  --color-border: #718096;
+  --color-shadow: rgba(255, 255, 255, 0.504);
+  --color-highlight-text: #4b5eaa;
+}
+
+
+.highlight-bg {
+    background-color: var(--color-highlight-text);
+}

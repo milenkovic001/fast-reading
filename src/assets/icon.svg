@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <!-- Background circle -->
+  <circle cx="120" cy="120" r="110" fill="#fdfdfd" stroke="#333" stroke-width="4"/>
+  
+  <!-- Open book -->
+  <path d="M60 70 Q90 50 120 70 Q150 50 180 70 L180 170 Q150 150 120 170 Q90 150 60 170 Z"
+        fill="#ffffff" stroke="#333" stroke-width="3"/>
+  <!-- Book middle fold -->
+  <line x1="120" y1="70" x2="120" y2="170" stroke="#666" stroke-width="2" stroke-dasharray="4 2"/>
+
+  <!-- Speed lines -->
+  <line x1="30" y1="100" x2="80" y2="100" stroke="#e63946" stroke-width="5" stroke-linecap="round"/>
+  <line x1="30" y1="120" x2="75" y2="120" stroke="#f77f00" stroke-width="4" stroke-linecap="round"/>
+  <line x1="30" y1="140" x2="70" y2="140" stroke="#4361ee" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Eye symbol (on the book) -->
+  <ellipse cx="120" cy="120" rx="25" ry="15" fill="none" stroke="#222" stroke-width="2"/>
+  <circle cx="120" cy="120" r="6" fill="#222"/>
+
+  <!-- App name -->
+  <text x="120" y="200" font-family="Arial, sans-serif" font-weight="bold" font-size="22" text-anchor="middle" fill="#222">
+    FastReading
+  </text>
+</svg>
