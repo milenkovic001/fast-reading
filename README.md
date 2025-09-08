@@ -27,6 +27,31 @@ This application is based on techniques popularized by Tony Buzan in his book "S
 - 🎨 **Large font** - Words are displayed in large, clear font for easier reading
 - 📈 **Gradual speed increase** - Train by gradually increasing your reading speed
 
+## 🎯 How to Use the Application
+
+1. **Insert text**: Copy the text you want to read into the text field
+2. **Or choose random text**: Click the random text button
+3. **Adjust speed**: Choose a speed that suits you (start with 200-300 words per minute)
+4. **Start reading**: Click start and focus on the words that appear
+5. **Increase speed**: When you feel comfortable, increase speed by 25-50 wpm
+
+## 📚 Speed Reading Tips
+
+- **Start slowly**: Begin with a speed that feels comfortable
+- **Practice regularly**: 10-15 minutes daily is enough for progress
+- **Don't go back**: Trust the process and don't try to return to previous words
+- **Increase gradually**: Increase speed by 10-15% when you master the current level
+- **Focus on comprehension**: Speed is only good if you maintain understanding
+
+## 🎓 Reading Speed Benchmarks
+
+- **Average reader**: 200-300 wpm
+- **Good reader**: 400-500 wpm  
+- **Fast reader**: 600-800 wpm
+- **Very fast reader**: 800+ wpm
+- **PhD holders**: 400+ wpm (academic reading)
+- **Speed reading experts**: 1000+ wpm
+- **Professional researchers**: 500-700 wpm
 ## 🚀 Getting Started
 
 Follow these steps to run the application locally:
@@ -55,31 +80,6 @@ npm run dev
 
 4. Open your browser and go to `http://localhost:3000` (or the port shown in terminal)
 
-## 🎯 How to Use the Application
-
-1. **Insert text**: Copy the text you want to read into the text field
-2. **Or choose random text**: Click the random text button
-3. **Adjust speed**: Choose a speed that suits you (start with 200-300 words per minute)
-4. **Start reading**: Click start and focus on the words that appear
-5. **Increase speed**: When you feel comfortable, increase speed by 25-50 wpm
-
-## 📚 Speed Reading Tips
-
-- **Start slowly**: Begin with a speed that feels comfortable
-- **Practice regularly**: 10-15 minutes daily is enough for progress
-- **Don't go back**: Trust the process and don't try to return to previous words
-- **Increase gradually**: Increase speed by 10-15% when you master the current level
-- **Focus on comprehension**: Speed is only good if you maintain understanding
-
-## 🎓 Reading Speed Benchmarks
-
-- **Average reader**: 200-300 wpm
-- **Good reader**: 400-500 wpm  
-- **Fast reader**: 600-800 wpm
-- **Very fast reader**: 800+ wpm
-- **PhD holders**: 400+ wpm (academic reading)
-- **Speed reading experts**: 1000+ wpm
-- **Professional researchers**: 500-700 wpm
 
 ## 🤝 Contributing
 
