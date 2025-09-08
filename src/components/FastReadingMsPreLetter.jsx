@@ -148,14 +148,6 @@ export const FastReadingMsPreLetter = ({ words, getRandomStory }) => {
                             <div>Time needed to read: {(Math.floor(totalDuration / 60)).toString().padStart(2, "0")}:{(Math.floor(totalDuration % 60)).toString().padStart(2, "0")}</div>
                         </div>
                     </div>
-                    <div className='space-y-4'>
-                        <div className='mt-1 mb-1'>
-                            <Button text={"Level 1"} />
-                        </div>
-                        <div className='mt-1 mb-1'>
-                            <Button text={"Level 2"} />
-                        </div>
-                    </div>
                 </div>
                 <br />
                 <div className='flex justify-between'>

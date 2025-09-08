@@ -109,14 +109,6 @@ export const FastReadingPractice = ({words ,getRandomStory}) => {
                                 <br />
                             </div>
                         </div>
-                        <div className='space-y-4'>
-                            <div className='mt-1 mb-1'>
-                                <Button text={"Level 1"} />
-                            </div>
-                            <div className='mt-1 mb-1'>
-                                <Button text={"Level 2"} />
-                            </div>
-                        </div>
                     </div>
                     <br />
                     <div className='flex justify-between'>
