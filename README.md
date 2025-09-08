@@ -1,3 +1,5 @@
+**Demo:**  [Fast Reading](https://fast-reading-beta.vercel.app/)
+
 # Fast Reading ⚡📖
 
 A speed reading training application that helps you improve your reading speed using scientifically proven techniques.
