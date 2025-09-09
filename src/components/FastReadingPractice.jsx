@@ -105,7 +105,7 @@ export const FastReadingPractice = ({words ,getRandomStory}) => {
                                 <div>Words per minute: {(60000 / intervalSpeed).toFixed(2)}</div>
                                 <div>Words pre second: {(1000 / intervalSpeed).toFixed(2)}</div>
                                 <div>The number of words in text: {words.length}</div>
-                                <div>Time needed to read: {(words.length / (1000 / intervalSpeed)).toFixed(2)} seconds</div>
+                                <div>Time needed to read: {Math.floor((words.length / (1000 / intervalSpeed) / 60)).toString().padStart(2, "0")}: {Math.floor((words.length / (1000 / intervalSpeed) % 60)).toString().padStart(2, "0")} seconds</div>
                                 <br />
                             </div>
                         </div>
