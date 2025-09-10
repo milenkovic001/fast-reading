@@ -24,6 +24,9 @@ function App() {
         setWords(inputText.replace(/[\n\t\s]+/g, ' ').split(" "))
     }
 
+    const handleClear = () => {
+        setInputText('')
+    }
   return (
     <>
 
@@ -44,11 +47,11 @@ function App() {
                   placeholder="Enter your text here"
                   />
               </label>
-              <div>
+              <div className='flex justify-between'>
                 <Button text={"Save"} onClick={handleSave} />
+                <Button text={"Clear"} onClick={handleClear} />
               </div>
             </div>
-            
             {activeTimeOption === 'timePerWord' ? (
               <FastReadingPractice words={words} getRandomStory={getRandomStory}/>
             ) : (

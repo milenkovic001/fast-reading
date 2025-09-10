@@ -15,7 +15,7 @@ const Navbar = ({ activeTimeOption, setActiveTimeOption }) => {
     const themes = [
         { name: 'Clean Light', themeName: 'clean-light', color: 'bg-white' },
         { name: 'Warm Light', themeName: 'warm-light', color: 'bg-yellow-200' },
-        { name: 'Deep Dark',  themeName: 'deep-dark', color: 'bg-gray-900' },
+        { name: 'Deep Dark', themeName: 'deep-dark', color: 'bg-gray-900' },
         { name: 'Slate Dark', themeName: 'slate-dark', color: 'bg-slate-800' }
     ];
 
@@ -27,11 +27,17 @@ const Navbar = ({ activeTimeOption, setActiveTimeOption }) => {
         { name: 'Montserrat', fontName: 'montserrat', class: 'font-[--font-montserrat]' },
         { name: 'Poppins', fontName: 'poppins', class: 'font-[--font-poppins]' },
         { name: 'Fira Code', fontName: 'fira Code', class: 'font-[--font-fira]' },
-        { name: 'arial', fontName: 'arial', class: 'font-arial' },
-        { name: 'sans', fontName: 'sans', class: 'font-sans' },
-        { name: 'serif', fontName: 'serif', class: 'font-serif' },
-        { name: 'mono', fontName: 'mono', class: 'font-mono' },
+        { name: 'Arial', fontName: 'arial', class: 'font-arial' },
+        { name: 'Sans', fontName: 'sans', class: 'font-sans' },
+        { name: 'Serif', fontName: 'serif', class: 'font-serif' },
+        { name: 'Mono', fontName: 'mono', class: 'font-mono' },
     ];
+
+    const activityOptions = [
+        { name: 'Time per Word', option: 'timePerWord', icon: <Clock size={16} /> },
+        { name: 'Time per Letter', option: 'timePerLetter', icon:  <Timer size={16} />}
+    ]
+
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -143,7 +149,7 @@ const Navbar = ({ activeTimeOption, setActiveTimeOption }) => {
                                             >
                                                 <span>{font.name}</span>
                                                 {selectedFont === font.fontName && (
-                                                    <span className="ml-auto text-nav-check">✓</span>
+                                                    <span className="ml-auto text-nav-box-check">✓</span>
                                                 )}
                                             </button>
                                         ))}
@@ -151,24 +157,18 @@ const Navbar = ({ activeTimeOption, setActiveTimeOption }) => {
                                 </div>
                             )}
                         </div>
-                        <div
-                            className={`flex items-center space-x-2 select-none hover:text-nav-text-hover px-3 py-2 rounded-md text-lg font-medium transition-colors cursor-pointer
-                            ${activeTimeOption === 'timePerWord' ? 'border bg-nav-bg-active border-border  text-nav-text-active' : 'text-nav-text'}
+
+                        {activityOptions.map((activityOption) => (
+                            <div
+                                className={`flex items-center space-x-2 select-none hover:text-nav-text-hover px-3 py-2 rounded-md text-lg font-medium transition-colors cursor-pointer
+                            ${activeTimeOption === activityOption.option ? 'border bg-nav-bg-active border-border  text-nav-text-active' : 'text-nav-text'}
                             `}
-                            onClick={() => setActiveTimeOption('timePerWord')}
-                        >
-                            <Clock size={16} />
-                            <span> Time per Word</span>
-                        </div>
-                        <div
-                            className={`flex items-center space-x-2 select-none hover:text-nav-text-hover px-3 py-2 rounded-md text-lg font-medium transition-colors cursor-pointer
-                            ${activeTimeOption !== 'timePerWord' ? 'border bg-nav-bg-active border-border text-nav-text-active' : 'text-nav-text'}
-                            `}
-                            onClick={() => setActiveTimeOption('timePerLetter')}
-                        >
-                            <Timer size={16} />
-                            <span>Time per Letter</span>
-                        </div>
+                                onClick={() => setActiveTimeOption(activityOption.option)}
+                            >
+                                {activityOption.icon}
+                                <span>{activityOption.name}</span>
+                            </div>))}
+
                     </div>
                 </div>
             </div>
